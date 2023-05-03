@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Millimeter To Foot</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Millimeter</label>
+            <input id="inputmilli" type="number" placeholder="Millimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Foot: <span id="outputfoot"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputfoot").innerHTML = valNum / 304.8;
+        }
+    </script>
+
+</body></html>
